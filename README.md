@@ -1,2 +1,1 @@
-# Friendica_Template
-Friendica Template (not for productive use)
+These templates are not intended for productive use. Use at your own risk.
