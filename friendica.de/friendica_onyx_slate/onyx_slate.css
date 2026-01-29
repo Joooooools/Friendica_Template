@@ -1592,148 +1592,27 @@ body.mod-search .wall-item-container .media {
 	border-top: 1px solid rgba(255, 255, 255, 0.03) !important;
 }
 
-.wall-item-actions-row button,
-.wall-item-actions-right button {
-	position: relative;
-	display: block;
-	white-space: normal !important;
-	margin: 0 auto !important;
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
-}
-
-.wall-item-actions-row button::after,
-.wall-item-actions-right button::after {
-	font-size: 12px;
-	font-family: sans-serif;
-	display: block;
-	margin-top: 2px;
-	text-decoration: none;
-}
-
-.button-comments::after { content: 'Comment'; }
-.button-announces::after { content: 'Share'; }
-.share-links .dropdown-toggle::after { content: 'Share'; }
-.button-votes::after { content: 'Quote'; }
-.button-likes::after { content: 'Like'; }
-[id^="dislike-"]::after { content: 'Dislike'; }
-.wall-item-actions-right .dropdown-toggle::after,
-.more-links .dropdown-toggle::after { content: 'More'; }
-
-.wall-item-actions-row button,
-.wall-item-response {
-	position: relative !important;
-}
-
-.wall-item-actions-row > button span,
+.wall-item-actions-row span,
 .wall-item-response span {
-	position: absolute !important;
-	text-align: center;
-	display: block;
-	background-color: #818cf8;
-	box-shadow: -1px 1px 1px #000;
-	border-radius: 8px;
-	color: #1c1e26;
-	font-size: 11px;
-	font-weight: 800;
-	width: fit-content;
-	min-width: 16px;
-	padding: 0 4px;
-	top: 0px !important;
-	left: 57% !important;
-	transform: translateX(2px) !important;
-	z-index: 10;
+	color: #818cf8 !important;
+	font-weight: 800 !important;
 }
 
-.wall-item-actions-row > button span:hover,
-.wall-item-response span:hover {
-	background-color: #ffffff;
-	color: #1c1e26;
+.wall-item-actions-row i,
+.wall-item-actions-row button {
+	color: #94a3b8 !important;
 }
 
 .wall-item-actions-row button:hover,
-.wall-item-actions-row button:focus,
-.wall-item-actions-row button::after,
-.wall-item-actions-right button:hover,
-.wall-item-actions-right button::after {
+.wall-item-actions-row button:hover i,
+.wall-item-actions-row button:hover span {
+	color: #a5b4fc !important;
 	text-decoration: none !important;
-	color: $link_color !important;
 }
 
-.wall-item-actions button {
-	font-size: 20px !important;
-	color: $nav_icon_color !important;
+.vote-event i {
+	color: #818cf8 !important;
 }
-
-.wall-item-actions button:hover {
-	color: $link_color !important;
-}
-
-.wall-item-actions button:disabled, button[disabled] {
-	color: #64748b !important;
-}
-
-.wall-item-actions .dropdown-menu li a,
-.wall-item-actions .dropdown-menu li button {
-	font-size: 13px !important;
-	white-space: nowrap !important;
-	height: auto !important;
-	margin: 0 !important;
-	padding: 8px 20px !important;
-	border-left: 3px solid transparent !important;
-}
-
-.wall-item-actions .dropdown-menu li a:hover,
-.wall-item-actions .dropdown-menu li button:hover {
-	background-color: #334155 !important;
-	border-left: 3px solid #818cf8 !important;
-}
-
-.wall-item-actions .dropdown-menu li a::after,
-.wall-item-actions .dropdown-menu li button::after {
-	content: none !important;
-	display: none !important;
-}
-
-.wall-item-actions .checkbox {
-	padding-top: 6px !important;
-}
-
-.wall-item-actions-row .wall-item-emoji {
-	font-size: 18px;
-	line-height: 40px;
-}
-
-.vote-event:not(:has(.wall-item-response:empty)) {
-	padding-bottom: 135px;
-}
-
-.vote-event .wall-item-response {
-	position: absolute;
-	top: 63px;
-	padding-top: 4px;
-}
-
-.vote-event .wall-item-response:empty {
-	display: none;
-}
-
-.vote-event .wall-item-response:nth-of-type(1) { left: 15px; }
-.vote-event .wall-item-response:nth-of-type(1) .button-event::after,
-[id^="attendyes"]::after { content: 'Going'; }
-
-.vote-event .wall-item-response:nth-of-type(2) { left: 105px; }
-.vote-event .wall-item-response:nth-of-type(2) .button-event::after,
-[id^="attendno"]::after {
-	content: 'Can\'t Go';
-	position: relative;
-	height: 20px;
-	overflow: hidden;
-}
-
-.vote-event .wall-item-response:nth-of-type(3) { left: 204px; }
-.vote-event .wall-item-response:nth-of-type(3) .button-event::after,
-[id^="attendmaybe"]::after { content: 'Maybe'; }
 
 .comment .media-body {
 	background-color: rgba(255, 255, 255, 0.03) !important;
