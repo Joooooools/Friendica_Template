@@ -2302,20 +2302,28 @@ hr.shared-anchor,
 background-color: rgba(255, 255, 255, 0.04) !important;
 }
 
-#jot-modal-content .fbrowser .folders button {
-background-color: rgba(20, 25, 40, 0.95) !important;
-backdrop-filter: blur(10px) !important;
-color: rgba(255, 255, 255, 0.72) !important;
-appearance: none;
-border: none;
-border-radius: 8px;
-width: 100%;
-margin-bottom: 5px;
+.fbrowser .folders button {
+	background-color: #334155 !important;
+	color: #ffffff !important;
+	border: 1px solid rgba(255, 255, 255, 0.1) !important;
+	border-radius: 8px !important;
+	padding: 8px 12px !important;
+	width: 100% !important;
+	margin-bottom: 5px !important;
+	text-align: left !important;
+	transition: all 0.2s ease !important;
 }
 
-#jot-modal-content .fbrowser .folders button:hover,
-#jot-modal-content .fbrowser .folders button:focus {
-background-color: rgba(255, 255, 255, .2) !important;
+.fbrowser .folders button:hover,
+.fbrowser .folders button:focus {
+	background-color: #475569 !important;
+	border-color: #818cf8 !important;
+	color: #ffffff !important;
+}
+
+.fbrowser .folders li.active button {
+	background-color: #1e212b !important;
+	border-left: 3px solid #818cf8 !important;
 }
 
 #jot-modal-content .fbrowser .folders li:hover,
@@ -2339,15 +2347,29 @@ background-color: transparent !important;
 	0 0 30px rgba(255, 255, 255, 0.15) !important;
 }
 
+.hovercard .popover-title {
+	background-color: #1c1e26 !important;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+	color: #ffffff !important;
+	font-weight: 800 !important;
+}
+
+.hovercard .popover-content {
+	background-color: transparent !important;
+	color: #cbd5e1 !important;
+	padding: 15px !important;
+}
+
 .hovercard.top > .arrow:after { border-top-color: $nav_bg !important; }
 .hovercard.right > .arrow:after { border-right-color: $nav_bg !important; }
 .hovercard.bottom > .arrow:after { border-bottom-color: $nav_bg !important; }
 .hovercard.left > .arrow:after { border-left-color: $nav_bg !important; }
 
 .hover-card-footer {
-	background-color: #141928 !important;
-	border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+	background-color: #0e1018 !important;
+	border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 	border-radius: 0 0 12px 12px !important;
+	padding: 10px !important;
 }
 
 .hover-card-pic img.thumbnail,
@@ -2359,12 +2381,13 @@ background-color: transparent !important;
 }
 
 .hover-card-footer .btn {
-	color: $nav_icon_color !important;
+	color: #cbd5e1 !important;
 }
 
 .hover-card-footer .btn:hover {
-	color: $link_color !important;
-	background-color: rgba(255, 255, 255, 0.1) !important;
+	color: #818cf8 !important;
+	background-color: transparent !important;
+	text-decoration: none !important;
 }
 
 .intro-photo-wrapper img.intro-photo,
@@ -2398,7 +2421,7 @@ border: 1px solid rgba(255, 255, 255, 0.1) !important;
 border-radius: 12px !important;
 box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8) !important;
 padding: 20px !important;
-color: $link_color !important;
+: $link_color !important;
 }
 
 #cboxClose {
