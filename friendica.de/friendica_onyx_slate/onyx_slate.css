@@ -1270,6 +1270,14 @@ section > .generic-page-wrapper,
 	border-radius: 8px 8px 0 0 !important;
 	border: 1px solid rgba(255, 255, 255, 0.05) !important;
 	border-bottom: none !important;
+	display: flex !important;
+	flex-wrap: nowrap !important;
+	overflow-x: auto !important;
+}
+
+.comment-icon-list span {
+	display: flex !important;
+	flex-direction: row !important;
 }
 
 .nav-tabs {
@@ -1590,6 +1598,11 @@ body.mod-search .wall-item-container .media {
 
 .wall-item-comment-wrapper {
 	border-top: 1px solid rgba(255, 255, 255, 0.03) !important;
+}
+
+.wall-item-actions .btn {
+	border: none !important;
+	box-shadow: none !important;
 }
 
 .wall-item-actions-row span,
@@ -2853,7 +2866,7 @@ display: block;
 
 	#tabmenu {
 	position: fixed !important;
-	left: 50% !important;
+	left: 45% !important;
 	transform: translateX(-50%) !important;
 	right: auto !important;
 	width: auto !important;
@@ -2871,7 +2884,7 @@ display: block;
 	position: relative !important;
 	display: block !important;
 	width: auto !important;
-	max-width: 20ch !important;
+	max-width: 18ch !important;
 	white-space: nowrap !important;
 	overflow: hidden !important;
 	text-overflow: ellipsis !important;
