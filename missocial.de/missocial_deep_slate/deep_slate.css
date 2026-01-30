@@ -1435,6 +1435,12 @@ text-decoration: none !important;
 	text-decoration: underline !important;
 }
 
+.event-card .event-card-title,
+.vevent .event-summary {
+	line-height: 1.3 !important;
+	margin-bottom: 5px !important;
+}
+
 .fc-event,
 .fc-day-grid-event,
 .fc-time-grid-event,
