@@ -261,6 +261,17 @@ select.form-control optgroup[label] {
 	color: $link_color !important;
 }
 
+select option:checked,
+select option:selected {
+	background: #1e2938 linear-gradient(0deg, #1e2938 0%, #1e2938 100%) !important;
+	color: #60a5fa !important;
+}
+
+select[multiple] option:checked {
+	background: #1e2938 linear-gradient(0deg, #1e2938 0%, #1e2938 100%) !important;
+	color: #60a5fa !important;
+}
+
 .dropzone:not(textarea) {
 	border: none !important;
 	background: none !important;
@@ -1030,6 +1041,23 @@ main .nav-tabs > li.active > a {
 .adminpage .table tr.info td {
 	background-color: rgba(96, 165, 250, 0.2) !important;
 	color: #ffffff !important;
+}
+
+.adminpage table tr.blocked td,
+.adminpage table tr.blocked.opened td {
+	background-color: #efd969 !important;
+	color: #1C1E26 !important;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.adminpage table tr.blocked td a {
+	color: #1C1E26;
+	text-decoration: underline;
+}
+
+.adminpage table tr.blocked td .btn-link {
+	color: #1C1E26;
+	text-decoration: underline;
 }
 
 .pager li > a, .pager li > span {
