@@ -438,6 +438,24 @@ select[multiple] option:checked {
     box-shadow: 0 0 20px rgba(96, 165, 250, 0.5) !important;
 }
 
+.button-announces.active .fa-retweet::before,
+.button-votes.active .fa-quote-right::before,
+.button-likes.active .fa-thumbs-up::before,
+.button-likes.active .fa-thumbs-down::before,
+.button-comments.active .fa-commenting::before {
+    color: #818cf8 !important;
+}
+
+.button-announces:disabled i::before {
+    color: #6b7280 !important;
+    opacity: 0.6;
+}
+
+.button-votes:disabled i::before {
+    color: #6b7280 !important;
+    opacity: 0.6;
+}
+
 
 /* ==========================================================================
  *  4. HEADER & NAVIGATION
