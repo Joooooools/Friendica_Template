@@ -122,7 +122,6 @@ section.help-content-wrapper p[style*="courier"] a {
     text-decoration: underline !important;
 }
 
-/* Global Headings Scale */
 h1 {
     font-size: 24px !important;
 }
@@ -1300,7 +1299,6 @@ section>.generic-page-wrapper,
 .vevent a:not(.btn):hover {
     text-decoration: underline !important;
 }
-
 
 .panel-heading,
 .panel-default>.panel-heading,
