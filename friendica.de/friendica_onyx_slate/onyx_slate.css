@@ -1443,18 +1443,10 @@ main .nav-tabs>li.active>a {
     text-decoration: underline;
 }
 
-.pager li>a,
-.pager li>span {
-    border-color: #a0a0a0;
-}
-
-.pager li>a:focus,
-.pager li>a:hover {
-    background-color: #303030;
-}
-
 .pagination>li>a,
-.pagination>li>span {
+.pagination>li>span,
+.pager>li>a,
+.pager>li>span {
     background-color: #1e212b !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
     color: $nav_icon_color !important;
@@ -1469,7 +1461,9 @@ main .nav-tabs>li.active>a {
 .pagination>.active>a:focus,
 .pagination>.active>a:hover,
 .pagination>.active>span:focus,
-.pagination>.active>span:hover {
+.pagination>.active>span:hover,
+.pager>.active>a,
+.pager>.active>span {
     background-color: #818cf8 !important;
     border-color: #818cf8 !important;
     color: #1c1e26 !important;
@@ -1477,7 +1471,9 @@ main .nav-tabs>li.active>a {
 }
 
 .pagination>li>a:hover,
-.pagination>li>span:hover {
+.pagination>li>span:hover,
+.pager>li>a:hover,
+.pager>li>span:hover {
     background-color: rgba(255, 255, 255, 0.05) !important;
     border-color: #818cf8 !important;
     color: #818cf8 !important;
@@ -1486,7 +1482,11 @@ main .nav-tabs>li.active>a {
 .pagination>.disabled>a,
 .pagination>.disabled>span,
 .pagination>.disabled>a:hover,
-.pagination>.disabled>span:hover {
+.pagination>.disabled>span:hover,
+.pager>.disabled>a,
+.pager>.disabled>span,
+.pager>.disabled>a:hover,
+.pager>.disabled>span:hover {
     background-color: rgba(0, 0, 0, 0.2) !important;
     border-color: rgba(255, 255, 255, 0.05) !important;
     color: rgba(255, 255, 255, 0.3) !important;
