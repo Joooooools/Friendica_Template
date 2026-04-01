@@ -122,6 +122,30 @@ section.help-content-wrapper p[style*="courier"] a {
     text-decoration: underline !important;
 }
 
+/* Global Headings Scale */
+h1 {
+    font-size: 24px !important;
+}
+
+h2 {
+    font-size: 22px !important;
+}
+
+h3 {
+    font-size: 20px !important;
+}
+
+h4 {
+    font-size: 18px !important;
+}
+
+h5 {
+    font-size: 16px !important;
+}
+
+h6 {
+    font-size: 14px !important;
+}
 
 /* ==========================================================================
  *  3. BUTTONS & INPUTS
@@ -1016,6 +1040,8 @@ aside .vcard.h-card .account-type {
 aside .vcard img.u-photo,
 aside img.vcard-photo {
     border-radius: 100% !important;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     box-shadow: 0 0 1px rgba(0, 0, 0, .3);
     border: 3px solid $background_color;
 }
@@ -1224,6 +1250,8 @@ section>.generic-page-wrapper,
     color: $nav_icon_color;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
     border-radius: 8px;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
 }
 
 .generic-page-wrapper,
@@ -1237,6 +1265,9 @@ section>.generic-page-wrapper,
     background-color: #1e212b !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
     border-radius: 12px !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    word-break: normal !important;
 }
 
 .wall-item-body a:not(.btn),
@@ -1283,6 +1314,11 @@ section>.generic-page-wrapper,
     border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
     padding: 5px 15px !important;
     font-size: 14px !important;
+}
+
+.accordion-toggle {
+    font-size: 18px !important;
+    font-weight: normal !important;
 }
 
 .panel-footer,
@@ -1419,20 +1455,44 @@ main .nav-tabs>li.active>a {
     background-color: #303030;
 }
 
+.pagination>li>a,
+.pagination>li>span {
+    background-color: #1e212b !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: $nav_icon_color !important;
+    border-radius: 8px !important;
+    margin: 0 3px !important;
+    padding: 6px 12px !important;
+    transition: all 0.2s ease !important;
+}
+
 .pagination>.active>a,
+.pagination>.active>span,
 .pagination>.active>a:focus,
 .pagination>.active>a:hover,
-.pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
-    border-color: $link_color;
-    background-color: $nav_bg;
-    color: $font_color;
+    background-color: #818cf8 !important;
+    border-color: #818cf8 !important;
+    color: #1c1e26 !important;
+    box-shadow: 0 0 10px rgba(129, 140, 248, 0.4) !important;
 }
 
 .pagination>li>a:hover,
 .pagination>li>span:hover {
-    background-color: $nav_bg;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: #818cf8 !important;
+    color: #818cf8 !important;
+}
+
+.pagination>.disabled>a,
+.pagination>.disabled>span,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>span:hover {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.05) !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+    cursor: not-allowed !important;
 }
 
 .badge {
@@ -1715,13 +1775,32 @@ body.mod-search .wall-item-container .media {
     color: #818cf8 !important;
 }
 
+.wall-item-name,
+.shared-author {
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
+h1.media-heading {
+    font-size: 16px !important;
+}
+
+
 .comment .media-body {
     background-color: rgba(255, 255, 255, 0.03) !important;
     border: none !important;
     border-left: 2px solid #818cf8 !important;
     border-radius: 0 8px 8px 0 !important;
-    padding: 10px 15px !important;
-    margin-top: 5px !important;
+    padding: 2px 15px 10px 10px !important;
+    margin-top: 10px !important;
+}
+
+.comment h2.media-heading {
+    font-size: 15px !important;
+}
+
+.comment .fakelink {
+    font-weight: bold !important;
 }
 
 .tread-wrapper {
@@ -1807,16 +1886,6 @@ a.tag.label.btn-info:focus,
 .type-link h4 a {
     color: $link_color !important;
     font-weight: 700 !important;
-}
-
-.type-link h4,
-.type-link blockquote,
-.type-link sup,
-.type-video h4,
-.type-video blockquote,
-.type-video sup {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
 }
 
 .type-link blockquote {
@@ -2507,6 +2576,8 @@ hr.shared-anchor,
 .contact-photo,
 .contact-photo-xs {
     border-radius: 100% !important;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     background-color: $background_color !important;
     border: 1px solid $nav_bg !important;
 }
@@ -2525,6 +2596,8 @@ hr.shared-anchor,
 #vcard-short-photo-wrapper img,
 #nav-short-info .contact-wrapper img {
     border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 #cboxOverlay {
@@ -2552,7 +2625,7 @@ hr.shared-anchor,
     border-radius: 12px !important;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8) !important;
     padding: 20px !important;
-    : $link_color !important;
+    color: $link_color !important;
 }
 
 #cboxClose {
@@ -2950,8 +3023,8 @@ body.mod-login .login-content-wrapper {
         bottom: auto !important;
         right: auto !important;
         transform: none !important;
-        background-color: #ef4444 !important;
-        box-shadow: 0 0 10px rgba(239, 68, 68, 0.5) !important;
+        background-color: #818cf8 !important;
+        box-shadow: 0 0 10px rgba(129, 140, 248, 0.5) !important;
         border-radius: 8px !important;
         font-weight: 800 !important;
         color: $link_color !important;
