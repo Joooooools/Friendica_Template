@@ -2021,6 +2021,7 @@ a.tag.label.btn-info:focus,
 
 .type-link blockquote {
     color: $font_color_darker !important;
+	border-left: 4px solid $link_color !important;
 }
 
 figure.img-allocated-height {
