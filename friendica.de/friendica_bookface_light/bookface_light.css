@@ -957,7 +957,7 @@ z-index: 10;
 	overflow-y: auto;
 }
 .wall-item-responses div p[class*="-expanded"] a {
-	color: var (--link-color) !important;
+	color: var(--link-color) !important;
 	display: block;
 	max-width: 100%;
 	white-space: nowrap;
@@ -2065,12 +2065,12 @@ a.tag.label,
 				box-shadow: inset 0 0 100px rgba(255,255,255,.2);
 				border-radius: 100%;
 			}
-	.justified-gallery > a,
+	/*.justified-gallery > a,
 	.justified-gallery > div,
 	.justified-gallery > figure{
     	height: 25vw !important;
     	width:  25vw !important;
-	}
+	}*/
 	/* Contact Notification Action Buttons */
 	.intro-actions {
 		position: relative;
@@ -2459,7 +2459,7 @@ Element {
 #accounttype-sidebar-inflated .fakelink h3::before,
 #accounttype-sidebar .fakelink h3::before,
 #sidebar-community-no-sharer-inflated .fakelink h3::before,
-#sidebar-community-no-sharer .fakelink h3::before
+#sidebar-community-no-sharer .fakelink h3::before,
 #rel-sidebar-inflated .fakelink h3::before,
 #rel-sidebar .fakelink h3::before {
     font-family: "FontAwesome";
@@ -2584,4 +2584,38 @@ Element {
 }
 .thread_level_9:hover {
     border-left-color: var(--thread-level-9-hover-color);
+}
+
+/*Fix gegen "N" neben dem Stift in der mobilen Ansicht*/
+@media (max-width: 991px) {
+	.event-wrapper .media {
+		display: block !important;
+	}
+
+	#jotOpen {
+	font-size: 0 !important;
+	overflow: hidden !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	}
+
+	#jotOpen i {
+	font-size: 20px !important;
+	margin: 0 !important;
+	}
+
+	#jotOpen span {
+	display: none !important;
+	}
+}
+
+/* --- FIX: ACTION-LINKS (KEINE UNTERSTREICHUNG) --- */
+.wall-item-actions-row button:hover,
+.wall-item-actions-row button:focus,
+.wall-item-actions-row button::after,
+.wall-item-actions-right button:hover,
+.wall-item-actions-right button::after {
+	text-decoration: none !important;
+	color: var(--link-color) !important;
 }
